@@ -8,17 +8,115 @@
 *   Table of content
 *   -----------------
 *   1. CSS Reset
-*   2. Navbar
-*   3. Products
-*   4. Footer
+*   2. Globals
+*   3. Navbar
+*   4. Products
+*   5. Footer
 *
 */
 
 /* 1. CSS Reset */
 @import "./reset.css";
 
-/* 2. Navbar */
+/* 2. Globals */
+* {
+    box-sizing: border-box;
+}
 
-/* 3. Products */
+img {
+    width: 100%;
+}
 
-/* 4. Footer */
+.text--white {
+    color: #fff;
+}
+
+.text--uppercase {
+    text-transform: uppercase;
+}
+
+.no--decoration {
+    text-decoration: none;
+}
+
+/* 3. Navbar */
+header {
+    background-color: #324ecf;
+}
+
+nav {
+    padding: 15px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-logo {
+    font-size: 1.9rem;
+    letter-spacing: 1px;
+}
+
+.right-nav .right-nav__links {
+    display: inline-block;
+    font-size: 16px;
+    padding: 3px 8px;
+    margin-left: 10px;
+}
+
+.right-nav .right-nav__links:hover {
+    border: 1px solid #fff;
+}
+
+/* 4. Products */
+main {
+    margin: 50px 10px;
+}
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 1em;
+}
+
+.product__feature {
+    grid-column-start: 1; 
+    grid-column-end: 4; 
+}
+
+.product__header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+.header__title {
+    font-size: 2.9rem;
+}
+
+.product__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product__box .product__image {
+    width: 300px;
+    text-align: center;
+}
+
+.product__body .product__title {
+    font-size: 18px;
+}
+
+/* 5. Footer */
+.copyright {
+    background-color: #ecedf0;
+    padding: 10px 120px;
+    text-align: center;
+}
+
+.copyright .copyright--content {
+    padding: 6px 0px;
+}
